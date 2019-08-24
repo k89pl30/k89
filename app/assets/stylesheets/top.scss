@@ -1,0 +1,63 @@
+/* テキスト部 ************************************************/
+.top-text {
+    color: gray;
+}
+
+.top-text h1 {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.top-text h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+/* ボタン部 **************************************************/
+.signup-img {
+    width: 25%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.btn_wrapper {
+    margin: 20px 0;
+    color: gray;
+    font-size: 17px;
+}
+
+.btn_signup {
+    text-align: center;
+}
+
+.btn_wrapper p {
+    margin: 10px 0;
+}
+
+.loggin {
+    background-color: #55acee;
+}
+
+.btn {
+    padding: 8px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    opacity:1;
+}
+
+.span {
+    margin: 10px 10px;    
+}
+
+
+
+
+
+
+

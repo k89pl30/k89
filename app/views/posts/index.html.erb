@@ -1,0 +1,62 @@
+
+<div class="main posts-index">
+<div class="container">     <!-- 縦並びにする為にcontainerを有効化 -->
+ 
+<!--============================================================--->  
+<p>検索</p>
+<div class="kensaku">
+<%= form_tag('/posts/index', :method => 'get') do %> <%#　projects_pathはモデル名で読みかえること %>
+        <%= text_field_tag :search, params[:search] %>
+        <%= submit_tag "Search", :name => nil %>
+<% end %>
+</div>
+<!--============================================================--->
+<h1 class="users-heading">投稿一覧</h1>
+
+  <div class="container-posts-index">
+      
+        <% @posts.each do |post| %>
+      
+  <div class="oya-posts-index-item">
+    <div class="posts-index-item">
+        <div class="post-left">
+            
+
+            <img src="<%= "/user_images/#{post.user.image_name}" %>">
+        
+        </div>
+        <div class="post-right">
+          <div class="post-user-name">
+              
+            <a class="test">Posted</a>
+            <%= ":" %><%= link_to(post.user.name, "/users/#{post.user.id}") %>
+          </div>
+          
+          <div class="post-time">
+            <a class="test">Date</a>  
+            <%= ":" %><%= post.created_at.in_time_zone('Tokyo').strftime("%Y-%m-%d %H:%M:%S") %>
+          </div>
+          
+          <div class="post-content">
+            <a>  
+            <%= link_to(post.content, "/posts/#{post.id}") %>
+            </a>
+          </div>    
+
+        </div>
+    </div>
+  </div>
+
+        <% end %>
+
+  </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+

@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 共通レイアウト ============================================ */
+body {
+    margin: 0;
+    color: #2d3133;
+    background-color: #EFFBFB;
+    min-height: 1vh;
+}
+
+.main {
+    position: absolute;
+    top: 65px;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+}
+
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  clear: both;
+}
+
+/* header ==================================================== */
+header {
+    height: 65px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(100, 199, 222, 0.5);
+}
+
+.header-menus {
+    float: right;
+    padding-right: 20px;
+}
+
+.header-menus li {
+    float: left;
+    font-size: 13px;
+    color: white;
+    padding-left: 15px;
+}
+
+.header-left {
+    float: left;
+}
+
+.header-left img {
+    padding-top: 0px;
+    height: 65px;
+}
+
+/************************************************************************/
+
+.header0 {
+    line-height: 65px;
+    margin:0;
+}
+
+.header0:hover {
+    background-color: rgba(131, 131, 131, 1.0);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+/************************************************************************/
+
+.header1 {
+    line-height: 65px;
+    border:none;
+}
+
+.header1::before {
+    content: '';
+    position: absolute;
+    bottom:0px;
+    z-index:-1;
+    width: 5.2%;    /*ここで個別に指定するくらいしか思いつかなかった*/
+    height:100%;
+    background: transparent;
+    box-shadow: inset 0px 0px 0px #6098FF;
+    display: inline-block;
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+}
+
+.header1:hover::before {
+    box-shadow: inset 300px 0px 0px #6098FF;
+}
+
+/************************************************************************/
+
+.header2 {
+    line-height: 65px;
+    border:none;
+}
+
+.header2::before {
+    content: '';
+    position: absolute;
+    bottom:0px;
+    z-index:-1;
+    width: 3.4%;    /*ここで個別に指定するくらいしか思いつかなかった*/
+    height:100%;
+    background: transparent;
+    box-shadow: inset 0px 0px 0px #6098FF;
+    display: inline-block;
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+}
+
+.header2:hover::before {
+    box-shadow: inset 300px 0px 0px #6098FF;
+}
+
+/************************************************************************/
+
+.header3 {
+    line-height: 65px;
+    border:none;
+}
+
+.header3::before {
+    content: '';
+    position: absolute;
+    bottom:0px;
+    z-index:-1;
+    width: 3.4%;    /*ここで個別に指定するくらいしか思いつかなかった*/
+    height:100%;
+    background: transparent;
+    box-shadow: inset 0px 0px 0px #6098FF;
+    display: inline-block;
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+}
+
+.header3:hover::before {
+    box-shadow: inset 300px 0px 0px #6098FF;
+}
+
+/************************************************************************/
+
+.header4 {
+    line-height: 65px;
+    border:none;
+}
+
+.header4::before {
+    content: '';
+    position: absolute;
+    bottom:0px;
+    z-index:-1;
+    width: 4.3%;    /*ここで個別に指定するくらいしか思いつかなかった*/
+    height:100%;
+    background: transparent;
+    box-shadow: inset 0px 0px 0px #6098FF;
+    display: inline-block;
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+}
+
+.header4:hover::before {
+    box-shadow: inset 300px 0px 0px #6098FF;
+}
+
+/************************************************************************/
+
+/* top-wrapper部分 ============================================ */
+.top-wrapper {
+    background-image: url("/white_wall_paper.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:#E0F8EC;
+    text-align: center;
+    padding-top: 180px;
+    padding-bottom: 300px;
+    
+}
+
+
+/* form部分 =================================================== */
+.form {
+    /*max-width: 600px;*/
+    max-width: 600px;
+    margin:0 auto;
+    background-color: white;
+    box-shadow: 0 2px 6px #c1ced7;
+    margin-right: 125px;
+}
+
+.form-heading {
+    font-weight: 300;
+    margin:60px 0 20px;
+    font-size: 48px;
+    color: #bccd84;
+}
+
+.form-body {
+    /*padding: 30px;*/
+    padding: 30px 30px;
+}
+
+.form-error {
+    color: #ff4d75;
+}
+
+
+
+/* flash ===================================================== */
+.flash {
+    padding: 45px 0;
+    color: white;
+    background:linear-gradient(to right, rgba(#808080, 0.9), rgba(#b0c4de, 0.8));
+    /*background:radial-gradient(#DB245B, #F2D8DF);*/
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    
+    z-index: 2;
+    width: 100%;
+    height: 128px;
+    border-radius: 0 0 2px 2px;
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+
+

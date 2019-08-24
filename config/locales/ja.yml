@@ -1,0 +1,5 @@
+ja:
+    attributes:
+        content: '本文(140字以内)'
+        name: '氏名'
+        hitokoto: '一言メッセージ'

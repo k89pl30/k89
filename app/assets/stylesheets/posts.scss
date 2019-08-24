@@ -1,0 +1,179 @@
+/* posts/index ================================================ */
+
+.oya-posts-index-item {
+    /*vertical-align: middle;*/
+    /*margin-left: 50%;
+    margin-right: 50%;*/
+}
+
+.container-posts-index {
+ max-width: 100%;
+ /*padding-right: 15px;
+ padding-left: 15px;
+ /*margin: 80px 190px auto;*/
+ vertical-align: middle;
+ 
+    
+}
+/****************************************************/
+.post-content {
+    padding: 10px 5px 20px 0px;
+    width:100%; /* 要素の幅 */
+    height:8em; /* 要素の高さ */
+    overflow:hidden; /* 指定した横幅からはみ出す部分（文字）を表示しない */
+}
+
+.kensaku {
+    margin-bottom: 20px;
+}
+
+.post-user-name a {
+    font-style: italic;
+}
+
+.post-time a {
+    font-style: italic;
+}
+
+
+.post-content a {
+    /*text-overflow: ellipsis;*/
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+
+}
+
+.post-user a {
+    text-align: center;
+    padding-left: 20px;
+}
+
+.post-time {
+    z-index: 5;
+}
+
+
+/****************************************************/
+.posts-index-item {
+    padding: 35px 30px;
+    /*background-color: rgba(12, 69, 199, 0.2);*/
+    /*border-radius: 10px;*/
+    width: 700px;
+    height: 250px;
+    overflow: hidden;
+    box-shadow: /*1px 1px*/ 1px 1px /*#c1ced7*/ #bbb /*inset*/;
+    border: 1px solid #bbb;    
+    /*float: left;*/
+    /*margin-bottom: 15px;*/
+    margin-right: 10px;
+}   
+
+.posts-index-item {
+    -moz-transition: -moz-transform 0.5s linear;
+    -webkit-transition: -webkit-transform 0.5s linear;
+    -o-transition: -o-transform 0.5s linear;
+    -ms-transition: -ms-transform 0.5s linear;
+    transition: transform 0.5s linear;
+}
+
+.posts-index-item:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.post-left img {
+  width: 50px;
+  height: 50px;
+  border-radius: 40%;
+  box-shadow: 0 2px 6px #c1ced7;
+  object-fit: cover;
+  margin-left: -10px;    /*ユーザー画像を左寄せ*/
+}
+
+.post-user-name a {
+  /*font-weight: 600;*/
+}
+
+.post-user-name a:hover {
+  color: #3ecdc6;
+}
+
+.post-left {
+  float: left;
+  width: 10%;
+  padding-top: 55px;
+}
+
+.post-right {
+  float: left;
+  width: 90%;
+  padding-left: 25px;
+  text-align: left;
+}
+
+
+/* posts/show ================================================ */
+.posts-show form {
+    display: inline;
+}
+
+.posts-show-item {
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 2px 6px #c1ced7;
+    overflow: hidden;
+}
+
+
+.posts-user-name{
+    text-align: center;
+}
+
+.posts-user-name img {
+    width: 40%;
+    position: center;
+}
+
+
+/* posts/new ================================================= */
+
+.posts-new textarea {
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid rgb(216, 218, 223);
+    min-height: 140px;
+    resize: none;
+}
+
+.posts-new textarea::-webkit-input-placeholder {
+    font-size: 24px;
+    opacity: 0.5;
+}
+
+/* posts/edit ================================================= */
+.posts-edit textarea {
+    width: 390px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
