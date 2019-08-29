@@ -91,7 +91,7 @@ class UsersController < ApplicationController
        #@user = User.search(params[:search])
 #         flash[:warning] = "ユーザーが見つかりました"
 #      else
-#         flash[:notice] = "強気ですね"
+#         flash[:notice] = "ユーザーが見つかりません"
 #      end
   #end
   
